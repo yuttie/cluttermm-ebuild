@@ -14,6 +14,7 @@ SRC_URI=""
 EGIT_REPO_URI="
 	git://git.gnome.org/${PN}
 	http://git.gnome.org/browse/${PN}"
+EGIT_BOOTSTRAP="env NOCONFIGURE=true ${S}/autogen.sh"
 
 LICENSE="LGPL-2.1"
 SLOT="0"
@@ -25,6 +26,8 @@ RDEPEND="
 	>=dev-cpp/pangomm-2.27.1
 	>=dev-cpp/atkmm-2.22.2"
 DEPEND="${RDEPEND}
+	sys-devel/autoconf
+	dev-cpp/mm-common
 	dev-util/pkgconfig
 	doc? ( app-doc/doxygen )"
 
