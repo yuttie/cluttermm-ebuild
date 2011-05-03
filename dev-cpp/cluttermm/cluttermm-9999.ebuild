@@ -17,7 +17,7 @@ EGIT_REPO_URI="
 
 LICENSE="LGPL-2.1"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS=""
 IUSE="doc examples test"
 
 RDEPEND="
