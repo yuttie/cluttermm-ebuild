@@ -34,7 +34,7 @@ DEPEND="${RDEPEND}
 src_prepare() {
 	DOCS="AUTHORS ChangeLog NEWS README TODO"
 	G2CONF="${G2CONF}
-		--disable-maintainer-mode
+		--enable-maintainer-mode
 		$(use_enable doc documentation)"
 
 	gnome2_src_prepare
