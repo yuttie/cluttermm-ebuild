@@ -21,6 +21,7 @@ RDEPEND="
 	>=dev-cpp/atkmm-2.22.2"
 DEPEND="${RDEPEND}
 	dev-util/pkgconfig
+	dev-cpp/mm-common
 	doc? ( app-doc/doxygen )"
 
 src_prepare() {
